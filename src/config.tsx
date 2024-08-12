@@ -2,9 +2,7 @@
 import { 
   CalculatorFilled,
   BookFilled,
-  SlidersFilled,
   ApiFilled,
-  HeartFilled,
 } from '@ant-design/icons'
 // 几个 Section 组件的信息
 export const sectionsInfo: {
@@ -77,19 +75,9 @@ export const itemsInfo = [
     cover: { src: '/covers/2.jpg', author: '小叶子', link: '#' }
   },
   {
-    title: '赛博画师小叶子', description: 'AI 绘画',
-    link: 'https://paint.leafyee.xyz', icon: <SlidersFilled />,
-    cover: { src: '/covers/3.png', author: '小叶子', link: '#' }
-  },
-  {
-    title: '见习咨询师小叶子', description: 'AI 小叶子陪伴你~',
-    link: 'https://chat.leafyee.xyz', icon: <HeartFilled />,
-    cover: { src: '/covers/1.png', author: '小叶子', link: '#' }
-  },
-  {
-    title: 'MarkdownPaper', description: '用 Markdown 写论文!',
-    link: 'https://github.com/LeafYeeXYZ/MarkdownPaper', icon: <ApiFilled />,
-    cover: { src: '/covers/5.jpg', author: '小叶子', link: '#' }
+    title: '我的Github', description: '我的一些开源项目',
+    link: 'https://github.com/LeafYeeXYZ', icon: <ApiFilled />,
+    cover: { src: '/covers/3.jpg', author: '小叶子', link: '#' }
   },
 ]
 
