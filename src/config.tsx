@@ -77,7 +77,7 @@ export const itemsInfo = [
   {
     title: '我的Github', description: '我的一些开源项目',
     link: 'https://github.com/LeafYeeXYZ', icon: <ApiFilled />,
-    cover: { src: '/covers/3.jpg', author: '小叶子', link: '#' }
+    cover: { src: '/covers/3.png', author: '小叶子', link: '#' }
   },
 ]
 
