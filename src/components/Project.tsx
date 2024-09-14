@@ -35,7 +35,12 @@ export function Project() {
         className='
           flex relative overflow-hidden flex-row justify-between items-end text-center
           before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-cover before:bg-center before:-z-10 before:bg-item-cover before:dark:brightness-75 before:hover:scale-105 before:transition
+          cursor-pointer
         '
+        onClick={e => {
+          e.stopPropagation()
+          window.open(item.link)
+        }}
       >
         <a // 图片作者信息
           className='

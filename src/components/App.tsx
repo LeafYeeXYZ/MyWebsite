@@ -3,8 +3,7 @@ import { Footer } from './Footer'
 import { Section } from './Section'
 import { Project } from './Project'
 import { Waline } from '../widgets/Waline'
-import { IntroTyped } from '../widgets/Typed'
-import { Pictures } from '../widgets/Pictures'
+
 import { sectionsInfo } from '../config'
 
 export function App() {
@@ -18,11 +17,24 @@ export function App() {
       </Section>
 
       <Section {...sectionsInfo[1]}>
-        <IntroTyped />
+        <div className="w-full h-full relative">
+          <div
+            className="absolute top-0 -left-4 w-full h-full bg-transparent"
+          />
+          <iframe 
+            src="https://blog.leafyee.xyz/about/#关于小叶子"
+            className="w-full h-full"
+          />
+        </div>
       </Section>
 
       <Section {...sectionsInfo[2]}>
-        <Pictures />
+        <div className="w-full h-full">
+          <iframe 
+            src="https://blog.leafyee.xyz/masonry/"
+            className="w-full h-full"
+          />
+        </div>
       </Section>
 
       <Section {...sectionsInfo[3]}>

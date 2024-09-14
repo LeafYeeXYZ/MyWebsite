@@ -1,43 +1,6 @@
 import { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
 
-export function IntroTyped() {
-  // Create reference to store the DOM element containing the animation
-  const introTyped = useRef(null)
-
-  useEffect(() => {
-    const typed = new Typed(introTyped.current, { 
-      strings: ['一个心理学专业的大学生<br>一个社会自由主义者<br>喜欢漫画 / 动漫 / BJD<br>喜欢水彩 / 板绘 / 设计<br>喜欢草莓 / 鱿鱼 / 抹茶 / 无骨鸡爪<br>对网络技术 / 编程感兴趣<br>主要使用 JS, TS, Go, Rust<br>喜欢一切可爱的人事物<br>致力于成为优秀的心理咨询师'],
-      typeSpeed: 70,
-      backSpeed: 35,
-      smartBackspace: true,
-      loop: false,
-      contentType: 'html',
-      showCursor: false,
-      startDelay: 2000,
-    })
-
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy()
-    }
-  }, [])
-
-  return (
-    <div 
-      id='intro-typed'
-      className='flex justify-center items-center h-full w-full'
-    >
-      <span 
-        ref={introTyped}
-        className='
-          text-base font-bold text-rose-950 dark:text-rose-50
-        '
-      ></span>
-    </div>
-  )
-}
-
 export function TitleTyped() {
   // Create reference to store the DOM element containing the animation
   const titleTyped = useRef(null)

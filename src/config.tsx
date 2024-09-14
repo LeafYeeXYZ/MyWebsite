@@ -28,6 +28,7 @@ export const sectionsInfo: {
     title: '关于我|ω・）',
     subtitle: '小叶子的自我介绍!',
     direction: 'row-reverse',
+    overwriteHeight: '38rem',
     widget: (<>
       <img 
         src='/covers/widgets/widget-1.PNG' 
@@ -37,9 +38,10 @@ export const sectionsInfo: {
     </>)
   },
   {
-    title: '我的画(๑•̀ㅂ•́)و',
-    subtitle: '小叶子的画作展示!',
+    title: '我的相册(๑•̀ㅂ•́)و',
+    subtitle: '小叶子的相册展示!',
     direction: 'row',
+    overwriteHeight: '30rem',
     widget: (<>
       <img 
         src='/covers/widgets/widget-2.PNG' 
@@ -72,33 +74,11 @@ export const itemsInfo = [
   { 
     title: '我的博客', description: '里面有我的笔记!',
     link: 'https://blog.leafyee.xyz', icon: <BookFilled />,
-    cover: { src: '/covers/2.jpg', author: '小叶子', link: '#' }
+    cover: { src: '/covers/5.jpg', author: '小叶子', link: '#' }
   },
   {
     title: '我的Github', description: '我的一些开源项目',
     link: 'https://github.com/LeafYeeXYZ', icon: <ApiFilled />,
     cover: { src: '/covers/3.png', author: '小叶子', link: '#' }
   },
-]
-
-export const picsList: string[] = [
-  '/covers/pictures/1.PNG',
-  '/covers/pictures/2.jpg',
-  '/covers/pictures/3.jpg',
-  '/covers/pictures/4.PNG',
-  '/covers/pictures/5.png',
-  '/covers/pictures/6.PNG',
-  '/covers/pictures/7.PNG',
-  '/covers/pictures/8.jpg',
-  '/covers/pictures/9.jpg',
-  '/covers/pictures/10.jpg',
-  '/covers/pictures/11.jpg',
-  '/covers/pictures/12.jpg',
-  '/covers/pictures/13.png',
-  '/covers/pictures/14.PNG',
-  '/covers/pictures/15.PNG',
-  '/covers/pictures/16.jpg',
-  '/covers/pictures/17.jpg',
-  '/covers/pictures/18.PNG',
-  '/covers/pictures/19.jpeg',
 ]
